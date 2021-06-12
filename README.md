@@ -118,7 +118,7 @@ Closes the MongoDB connection.
 
 ## Install
 
-    npm install mubsub
+    npm install mubsub-nbb
 
 ## Tests
 
