@@ -4,7 +4,7 @@ var helpers = require('./helpers');
 
 describe('Connection', function () {
     it('emits "error" event', function (done) {
-        mubsub('mongodb://localhost:6666/mubsub_tests').on('error', function () {
+        mubsub('mongodb://localhost:6666/mubsub_tests', {serverSelectionTimeoutMS: 1000}).on('error', function () {
             done();
         });
     });
